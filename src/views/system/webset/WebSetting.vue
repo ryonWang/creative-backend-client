@@ -10,8 +10,8 @@
             <el-input v-model="form.website" placeholder="网站域名" />
           </el-form-item>
         </el-col>
-        <el-col :span="6">
-          <el-form-item label="静态资源访问域名" prop="staticWebsite">
+        <el-col :span="8">
+          <el-form-item label="静态资源访问域名(更改为七牛云域名或阿里OSS域名)" prop="staticWebsite">
             <el-input v-model="form.staticWebsite" placeholder="静态资源访问域名" />
           </el-form-item>
         </el-col>
@@ -40,6 +40,7 @@
               <el-option key="local" label="本地存储" value="local"></el-option>
               <el-option key="server" label="服务器" value="server"></el-option>
               <el-option key="qiniu" label="七牛云" value="qiniu"></el-option>
+              <el-option key="aliOss" label="阿里OSS" value="aliOss"></el-option>
             </el-select>
           </el-form-item>
         </el-col>

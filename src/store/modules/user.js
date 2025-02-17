@@ -52,6 +52,7 @@ const user = {
       return new Promise((resolve, reject) => {
         getInfo().then(res => {
           const user = res.data.user
+          console.log(user);
           const avatar = (user.avatar == "" || user.avatar == null) ? require("@/assets/images/profile.jpg") : user.avatar;
           commit('SET_PERMISSIONS', res.data.permissions)
           commit('SET_NAME', user.userName)

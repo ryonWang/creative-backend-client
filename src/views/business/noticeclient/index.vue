@@ -73,6 +73,7 @@
           title: [{ required: true, trigger: "blur", message: "标题不能为空" }],
           sort: [{ required: true, trigger: "blur", message: "排序号不能为空" }],
           content: [{ required: true, trigger: "blur", message: "内容不能为空" }],
+          ifShow: [{ required: true, trigger: "blur", message: "请选择是否开启" }],
         }
       }
     },
@@ -126,6 +127,7 @@
       { title: '标题', key: 'title' },
       { title: '通知类型', key: 'noticeType' },
       { title: '排序号', key: 'sort' },
+      { title: '是否开启', key: 'ifShow', type: 'switch', activeValue: true, inactiveValue: false, defaultValue: true },
       { title: '内容', key: 'content',type: 'textarea',minHeight: 300 },
     ]
   };
